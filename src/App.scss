@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+:root{
+
+}
+
+
+$color-primary--cyan :hsl(193, 38%, 86%);
+$color-primary--green :hsl(150, 100%, 66%);
+
+$color-secondary:hsl(217, 19%, 38%);
+$color-trinary:hsl(217, 19%, 24%);
+$color-fourth:hsl(218, 23%, 16%);
+
+
+$font-primary : 'Manrope', sans-serif;
+
+
+
+body{
+background: $color-fourth;
+font-size: 28px;
+font-family: $font-primary;
+}
+
+#root{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2{
+    font-size: 30px;
+     font-weight: 800;
+     color: $color-primary--cyan;
+     line-height: 100%;
+    }
+
+.card{
+    max-width: 700px;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    background: $color-trinary;
+    position: relative;
+    padding-inline: 25px;
+    padding-block:30px 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+
+    &__small{
+        color: $color-primary--green;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    &__btn{
+        max-width: 60px;
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background: $color-primary--green;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        bottom: -40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            box-shadow: 0px 0px 46px 0px $color-primary--green;
+            border: none;
+        }
+    }
+}
